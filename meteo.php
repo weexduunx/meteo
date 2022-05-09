@@ -80,12 +80,12 @@ class Sunu_Meteo_Widget extends WP_Widget
 
         $details    =   ip_details("41.82.171.182");
 
-        $ville = $details->ville;
+        $ville = $details->city;
 
 	// analyser les paramètres actuels avec des valeurs par défaut
 	//Cette fonction est utilisée dans WordPress pour permettre à la file ou au tableau de fusion dans un autre tableau.
 	
-        extract(wp_parse_args((array) $instance, $default)); ?>
+        extract(wp_parse_args((array) $instance, $details)); ?>
 
         <p>
             <label for="<?php echo esc_attr($this->get_field_id('city')); ?>">
