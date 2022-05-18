@@ -1,5 +1,5 @@
 # Sunu Meteo Widget
-Est un plugin widget wordpress permettant d'afficher la météo de la date d'aujourd'hui d'un lieu utilisant l'ipAdresse de l'utilisateur 
+Est un widget wordpress permettant d'afficher la météo de la date d'aujourd'hui d'un lieu utilisant l'ipAdresse de l'utilisateur 
 
 ## Site
   * [IP INFO](https://ipinfo.io)
