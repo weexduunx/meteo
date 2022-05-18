@@ -84,11 +84,6 @@ class Sunu_Meteo_Widget extends WP_Widget
 
 	// analyser les paramètres actuels avec des valeurs par défaut
 	//Cette fonction est utilisée dans WordPress pour permettre à la file ou au tableau de fusion dans un autre tableau.
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 6ba28012bf4cb66e141a295c0b60f79d1d3363f5
         extract(wp_parse_args((array) $instance, $details)); ?>
 
         <p>
