@@ -29,7 +29,7 @@ function widget_style()
 
 function donnee_meteo($city)
 {
-    $apiKey = "a45b465522049f4d9263444346c22809";
+    $apiKey = "71841940c09bcaa94a99e0cb37205cda";
 
     //$cityId = "Dakar";
     $openWeatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" . $city . "&appid=" . $apiKey;
@@ -80,12 +80,12 @@ class Sunu_Meteo_Widget extends WP_Widget
 
         $details    =   ip_details("41.82.171.182");
 
-        $ville = $details->ville;
+        $ville = $details->city;
 
 	// analyser les paramètres actuels avec des valeurs par défaut
 	//Cette fonction est utilisée dans WordPress pour permettre à la file ou au tableau de fusion dans un autre tableau.
-	
-        extract(wp_parse_args((array) $instance, $default)); ?>
+
+        extract(wp_parse_args((array) $instance, $details)); ?>
 
         <p>
             <label for="<?php echo esc_attr($this->get_field_id('city')); ?>">
@@ -115,7 +115,7 @@ class Sunu_Meteo_Widget extends WP_Widget
         echo $before_widget;
 
         $donnee = donnee_meteo($ville);
-        $heureActu = date("H:i");
+        $date = date("H:i:s");
     ?>
 
 
@@ -127,7 +127,7 @@ class Sunu_Meteo_Widget extends WP_Widget
 
             <div class="d-flex">
               <h6 class="flex-grow-1"><?php echo $donnee->name; ?></h6>
-              <h6><?php echo $heureActu; ?></h6>
+              <h6><?php echo $date; ?></h6>
             </div>
 
             <div class="d-flex flex-column text-center mt-5 mb-4">
