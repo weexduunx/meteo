@@ -15,10 +15,13 @@ Est un plugin widget wordpress permettant d'afficher la météo de la date d'auj
 
 
 ## Usage
-
-```Télécharger le dépôt 
-```Extrait le dossier sous wp-content/plugin
-```Active l'extension sous extension wordpress de votre Tableau de bord
-```Abracadabra boom ! Enjoy it.
-  * Créer un compte open map weather pour obtenir un api
-
+  * Effectuer un clone du dépôt git
+  * Extraire le dossier zip dans wp-content/plugins/
+  * Créer un compte sur le site openweathermap afin d'obtenir un clé api
+  * Créer un compte sur le site IPINFO, copie et colle l'ip proposé
+  * Ouvrez votre tableau de bord wordpress
+  * Activez l'extension
+  * Tada! Votre widget est prêt à être utiliser
+  * En ajoutant un widget, chercher le nom Sunu Meteo
+  * Aprés ajout.. vous pouvez définir votre ville 
+  * Une fois terminé, Abracadabra boom... Vous avez la météo 
